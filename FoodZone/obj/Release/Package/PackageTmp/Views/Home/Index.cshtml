@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div>
+    <table align="center" style="width: 60%;"><tr>
+        <td><img src="/Content/Images/wedding-shower-cookies.jpg" style="width: 100%;"/></td>
+    </tr>
+    </table>
+</div>
+<div>
+    <table align="center" style="width: 60%;">
+    <tr id="menu">
+        <td><a href=@Url.Action("Custom","Product")>Custom</a></td>
+        <td><a href=@Url.Action("Seasonal", "Product")>Seasonal</a></td>
+        <td><a href=@Url.Action("Corporate", "Product")>Corporate</a></td>
+        <td><a href=@Url.Action("Events", "Product")>Events</a></td>
+    </tr>
+    <tr>
+        <td class="div-product-nav"><a href=@Url.Action("Custom","Product")><img src="/Content/Images/Custom.jpg" class="div-product-nav-image" /></a></td>
+        <td class="div-product-nav"><a href=@Url.Action("Seasonal", "Product")><img src="/Content/Images/Holloween.jpg" class="div-product-nav-image" /></a></td>
+        <td class="div-product-nav"><a href=@Url.Action("Corporate", "Product")><img src="/Content/Images/Corporate.jpg" class="div-product-nav-image" /></a></td>
+        <td class="div-product-nav"><a href=@Url.Action("Events", "Product")><img src="/Content/Images/Events.jpg" class="div-product-nav-image" /></a></td>
+    </tr></table>
+</div>

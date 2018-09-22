@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    @Styles.Render("~/Content/Main.css")
+</head>
+<body>
+    <div>
+        <div>
+            <table style="width: 60%" align="center">
+                <tr id="menu">
+                    <td><a href=@Url.Action("Index","Home")>Home</a></td>
+                    <td><a href=@Url.Action("About", "Home")>About</a></td>
+                    <td><a href=@Url.Action("News", "Home")>News</a></td>
+                    <td><a href=@Url.Action("Contact", "Home")>Contact us</a></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table align="center" style="width: 60%; height: 150px; background-color: white;"><tr><td align="center"><img src="/Content/Images/title.png" style="width:auto; height:125px;"/></td></tr></table>
+        </div>
+        <div>
+            <table align="center" style="width: 60%">
+                <tr id="menu">
+                    <td><a href=@Url.Action("Cookies","Product")>Cookies</a></td>
+                    <td><a href=@Url.Action("Bakery", "Product")>Bakery</a></td>
+                    <td><a href=@Url.Action("Menus", "Product")>Menus</a></td>
+                    <td><a href=@Url.Action("CustomeOrders", "Product")>Custome Orders</a></td>
+                    <td><a href=@Url.Action("FindUs", "Product")>Where to Find Us</a></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            @RenderBody()
+        </div>
+        <div>
+            <table align="center" style="width: 60%">
+                <tr id="menu">
+                    <td><a href=@Url.Action("Reviews","Customer")>Customer Reviews</a></td>
+                    <td><a href=@Url.Action("FAQ","Customer")>Frequently Asked Questions</a></td>
+                    <td><a href=@Url.Action("PrivacyPolicy","Customer")>Privacy Policy</a></td>
+                    <td><a href=@Url.Action("Returns","Customer")>Returns</a></td>
+                    <td><a href=@Url.Action("ShippingOptions","Customer")>Shipping Options</a></td>
+                    <td><a href=@Url.Action("Terms","Customer")>Terms & Conditions</a></td>
+                    <td><a href=@Url.Action("Contact","Home")>Contact Us</a></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table align="center"><tr><td>© Copyright 2018 Flake n Bake. All Rights Reserved</td></tr></table>       
+        </div>
+    </div>
+</body>
+</html>
